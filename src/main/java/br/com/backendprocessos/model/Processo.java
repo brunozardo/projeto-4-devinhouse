@@ -39,6 +39,7 @@ public class Processo implements Serializable {
 	private String nuAnoProcesso;
 	private String sgOrgaoProcesso;
 
+	public Processo () {};
 	
 	public Processo(Integer id, Integer cdAssunto, Integer cdInteressado, String descricao, String descricaoAssunto,
 			String nmInteressado, String nuAnoProcesso, Integer nuProcesso, String sgOrgaoProcesso,

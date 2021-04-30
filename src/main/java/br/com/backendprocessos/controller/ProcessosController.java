@@ -41,7 +41,7 @@ public class ProcessosController {
 		return processosRepository.findByNuProcesso(nuProcesso);
 	}
 
-	@PostMapping
+	@PostMapping(path = "/adicionar-processo")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Processo adicionar(@RequestBody Processo processo) {
 		return processosRepository.save(processo);
